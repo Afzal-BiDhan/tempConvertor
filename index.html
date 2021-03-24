@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Temp Convertor</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="tempCalce" onsubmit="calculateTemp(); return false">
+            <h1>🥵Enter the temperature your'd like to convert🥶</h1>
+            <input type="number" name="temp" id="temp" placeholder=" 0">
+            <select name="temp_diff" id="temp_diff">
+                <option value="cel">°Celsius</option>
+                <option value="feh">°Fahrenheit</option>
+            </select><br />
+            <input type="submit" id="submit" class="btn btn-warning" value="Convert"><br />
+            <h2><span id="result_num"></span> <span id="result_nam"></span></h2>
+        </form>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
